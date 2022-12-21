@@ -11,7 +11,5 @@ Jenkinsfile contains the pipeline script for an automated deployment of the app 
 
  - Test: Simulate running a test on the newly committed version in the github repo
  
- - Deploy: Use the ssh keys to sync the app repo in the 2 backend servers with the Jenkins workspace repo pulled from github
-
-           Run the Nodejs app (which can be accesse at port 3000!)
+ - Deploy: Use the ssh keys to sync the app repo in the 2 backend servers with the Jenkins workspace repo pulled from github            and run the Nodejs app (which can be accessed at port 3000!)
 
