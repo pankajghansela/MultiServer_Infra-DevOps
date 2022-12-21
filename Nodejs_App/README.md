@@ -5,5 +5,13 @@ Contains the demo NodeJs app with a simple test for an automated deployment usin
 
 The test is a dummy test which doesn't really do much (purely for learning purposes, its always going to pass)
 
-Jenkins file contains the pipeline script for an automated deployment via Jenkins 
+Jenkinsfile contains the pipeline script for an automated deployment of the app setup via Jenkins, with 3 stages:
+ 
+ - Build: Install the npm dependencies
+
+ - Test: Simulate running a test on the newly committed version in the github repo
+ 
+ - Deploy: Use the ssh keys to sync the app repo in the 2 backend servers with the Jenkins workspace repo pulled from github
+
+           Run the Nodejs app (which can be accesse at port 3000!)
 
