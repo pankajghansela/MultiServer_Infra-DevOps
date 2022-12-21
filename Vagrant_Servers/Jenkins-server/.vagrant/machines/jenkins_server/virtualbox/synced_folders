@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"C:/Users/Pankaj Ghansela/Desktop/MultiServerInfra/Vagrant_Servers/Jenkins-server","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

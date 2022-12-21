@@ -1,0 +1,34 @@
+---
+# Git Server 
+- name: Congifure the Git server
+  hosts: git_server
+  remote_user: vagrant
+  become: yes
+
+  roles:
+    - common
+    - git-server
+      
+# NodeJS App - frontend
+- name: Configure the Nginx reverse proxy
+  hosts: nodejsapp_frontend
+  remote_user: vagrant
+  become: yes
+
+  roles:
+    - common
+    - nginx-common
+    - nginx-nodejsapp
+
+# NodeJS App - backend
+- name: Configure the nodejs backend app
+  hosts: nodejsapp_backend
+  remote_user: vagrant
+  become: yes
+
+  roles:
+    - common
+    - nodejs-common
+
+         
+  
