@@ -13,7 +13,7 @@ pipeline {
                   echo 'testing the software'
                   sh 'cd ${WORKSPACE}/Nodejs_App/'
                   sh 'pwd'
-                  sh 'npm test'   
+                  sh 'npm test -- test'   
                   sh 'pwd'               
               }
           }
