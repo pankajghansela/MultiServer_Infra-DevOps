@@ -26,8 +26,8 @@ pipeline {
                   ssh-keyscan 192.168.33.11 >> /var/lib/jenkins/.ssh/known_hosts
                   ssh-keyscan 192.168.33.12 >> /var/lib/jenkins/.ssh/known_hosts
 
-                  rsync -avz --exclude  '.git' --delete -e "ssh -i $sshkey" ./ vagrant@192.168.33.11:/app/
-                  rsync -avz --exclude  '.git' --delete -e "ssh -i $sshkey" ./ vagrant@192.168.33.12:/app/
+                  rsync -avz --exclude  '.git' -e "ssh -i $sshkey" ./ vagrant@192.168.33.11:/app/
+                  rsync -avz --exclude  '.git' -e "ssh -i $sshkey" ./ vagrant@192.168.33.12:/app/
 
                   ssh -i $sshkey vagrant@192.168.33.11 "cd /app/Nodejs_App/ && sudo npm install express && node index.js"
                   ssh -i $sshkey vagrant@192.168.33.12 "cd /app/Nodejs_App/ && sudo npm install express && node index.js"
