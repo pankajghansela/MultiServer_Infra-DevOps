@@ -11,10 +11,8 @@ pipeline {
           stage('test') {
               steps {
                   echo 'testing the software'
-                  sh 'cd Nodejs_App/'
-                  sh 'pwd'
-                  sh 'npm test -- test'   
-                  sh 'pwd'               
+                  sh 'cd Nodejs_App/ && npm test'
+                  sh 'pwd'                                                 
               }
           }
 
