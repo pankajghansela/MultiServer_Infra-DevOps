@@ -11,7 +11,7 @@ pipeline {
           stage('test') {
               steps {
                   echo 'testing the software'
-                  sh 'cd ${WORKSPACE}/Nodejs_App/'
+                  sh 'cd Nodejs_App/'
                   sh 'pwd'
                   sh 'npm test -- test'   
                   sh 'pwd'               
