@@ -5,7 +5,7 @@
 
 - Infra as Code: Fully automated provisioning of all the VMs using Vagrant
 
-	- All the VMs provisioned with their own IP address to be part of the same network 
+	- All the VMs provisioned with their own IP address created as a part of the same network 
 
 - Ansible: Automated configuration management for all the VMs using Ansible roles and playbook
 
@@ -21,13 +21,13 @@
 
 
 
--NodeJS app setup: 
+- NodeJS app setup: 
 
-- Imitating a real-world scenario for the app setup with a frontend server for handling the incoming requests and 2 backend servers for redundancy and fault tolerance
+	- Imitating a real-world scenario for the app setup with a frontend server for handling the incoming requests and 2 backend servers for redundancy and fault tolerance
 
-- Frontend server: Nginx reverse proxy server configured for load balancing to the backend servers 
-                   
-- Backend servers: 2 servers running the identical demo Nodejs app at port 3000
+	- Frontend server: Nginx reverse proxy server configured for load balancing to the backend servers 
+
+	- Backend servers: 2 servers running the identical demo Nodejs app at port 3000
  
 
 
