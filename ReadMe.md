@@ -1,4 +1,4 @@
-A local network of multiple servers for a Fully Automated Production Ready NodeJS app deployment
+# A local network of multiple servers for a Fully Automated Production Ready NodeJS app deployment
 
 
 - Created a network of 5 Linux VMs, each for a different service: Git, Jenkins, NodeJS app: 1 Frontend and 2 Backend servers
